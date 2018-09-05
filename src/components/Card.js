@@ -13,13 +13,19 @@ const styles = theme => ({
     },
     cardContent: {
         flexGrow: 1
+    },
+    button: {
+        backgroundImage: `url(${image})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center'
     }
 });
 
 const ADCard = ({ classes, title }) => {
     return (
         <Card className={classes.card}>
-            <ButtonBase>
+            <ButtonBase className={classes.button}>
                 <CardMedia className={classes.cardMedia} title="Image title" image={image} />
             </ButtonBase>
             <CardContent className={classes.cardContent}>
