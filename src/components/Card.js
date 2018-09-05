@@ -26,7 +26,7 @@ const ADCard = ({ classes, title }) => {
     return (
         <Card className={classes.card}>
             <ButtonBase className={classes.button}>
-                <CardMedia className={classes.cardMedia} title="Image title" image={image} />
+                <CardMedia className={classes.cardMedia} title="Image title" src="none" />
             </ButtonBase>
             <CardContent className={classes.cardContent}>
                 <Typography gutterBottom variant="headline" component="h2">
